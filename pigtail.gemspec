@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email         = ["nab@blahfe.com"]
   s.homepage      = "https://github.com/nabinno/pigtail"
   s.summary       = %q{Configs in ruby.}
-  s.description   = %q{Clean ruby syntax for writing and deploying configs.}
+  s.description   = %q{Pigtail is a Ruby gem that provides a clear syntax for writing configurations.}
   s.license       = "MIT"
 
   s.files         = Dir["{bin,lib,test}/**/*",
