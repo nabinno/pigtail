@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+require 'optparse'
+require 'pigtail'
+require 'pigtail/version'
+
+options = {}
+
+OptionParser.new do |opts|
+  opts.banner = "Usage: pigtail [options]"
+  opts.on('-w', '--write-plagger-configs [identifier]', 'Default: full path to pigtail_config.rb file') do |identifier|
+     options[:write] = true
+     options[:identifier] = identifier if identifier
+  end
+  opts.on('-s', '--set [variables]', 'Example: --set \'environment=staging&path=/my/sweet/path\'') do |set|
+    options[:set] = set if set
+  end
+  opts.on('-f', '--load-file [pigtail file]', 'Default: config/pigtail_config.rb') do |file|
+    options[:file] = file if file
+  end
+  opts.on('-v', '--version') { puts "Pigtail v#{Pigtail::VERSION}"; exit(0) }
+end.parse!
+
+Pigtail::CommandLine.execute(options)
