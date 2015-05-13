@@ -23,7 +23,7 @@ This will create an initial `config/pigtail.rb` file for you.
 
 ### Example config/pigtail.rb file
 
-Pigtail ships with three pre-defined job types: command, runner, and rake. You can define your own with `config_type`.
+Pigtail ships with three pre-defined config types: command, runner, and rake. You can define your own with `config_type`.
 
 ```ruby
 config_type :sports, <<-YAML
@@ -59,6 +59,16 @@ This will simply show you your `config/pigtail.rb` file converted to cron syntax
 
 Pigtail is based heavily on Whenever.
 
+### Epilogue
+
+```
+A whale!
+Down it goes, and more, and more
+Up goes its tail!
+
+-Buson Yosa
+```
+
 ----
 
 Compatible with Ruby 1.8.7-2.2.0, JRuby, and Rubinius. [![Build Status](https://secure.travis-ci.org/nabinno/pigtail.png)](http://travis-ci.org/nabinno/pigtail)
@@ -66,11 +76,3 @@ Compatible with Ruby 1.8.7-2.2.0, JRuby, and Rubinius. [![Build Status](https://
 ---
 
 Copyright &copy; 2015 Nab Inno
-
-----
-
-A whale!
-Down it goes, and more, and more
-Up goes its tail!
-
--Buson Yosa
