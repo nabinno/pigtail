@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.executables   = Dir["bin/*"].map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_development_dependency "bundler", "~> 1.9"
+  s.add_development_dependency "bundler", ">= 2.2.10"
   s.add_development_dependency 'mocha', '~> 0.9', '>= 0.9.5'
   s.add_development_dependency 'rake', '~> 0'
 end
